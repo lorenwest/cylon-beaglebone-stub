@@ -29,5 +29,8 @@
 
   "dependencies": {
     "cylon": "~0.21.1"
+  },
+  "scripts": {
+    "test": "make test"
   }
 }
