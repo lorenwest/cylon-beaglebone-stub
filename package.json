@@ -24,11 +24,15 @@
   },
 
   "peerDependencies": {
-    "cylon": ">=0.21.1 < 1"
+    "cylon":      ">= 0.21.0 < 1",
+    "cylon-gpio": ">= 0.21.0 < 1",
+    "cylon-i2c":  ">= 0.18.0 < 1"
   },
 
   "dependencies": {
-    "cylon": "~0.21.1"
+    "cylon": "~0.21.1",
+    "cylon-gpio": ">= 0.21.0 < 1",
+    "cylon-i2c":  ">= 0.18.0 < 1"
   },
   "scripts": {
     "test": "make test"
