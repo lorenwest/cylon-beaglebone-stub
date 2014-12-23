@@ -1,6 +1,6 @@
 # Cylon.js Beaglebone stub for testing
 
-[![NPM](https://nodei.co/npm/config.svg?downloads=true&downloadRank=true)](https://nodei.co/npm/cylon-beaglebone-stub/)&nbsp;&nbsp;
+[![NPM](https://nodei.co/npm/cylon-beaglebone-stub.svg?downloads=true&downloadRank=true)](https://nodei.co/npm/cylon-beaglebone-stub/)&nbsp;&nbsp;
 [![Build Status](https://secure.travis-ci.org/lorenwest/cylon-beaglebone-stub.svg?branch=master)](https://travis-ci.org/lorenwest/cylon-beaglebone-stub)&nbsp;&nbsp;
 [release notes](https://github.com/lorenwest/cylon-beaglebone-stub/blob/master/History.md)
 
