@@ -20,7 +20,7 @@ describe("Cylon.BeagleboneStub", function() {
 
   describe("#dependencies", function() {
     it('is an array of supplied dependencies', function() {
-      expect(module.dependencies).to.be.eql([]);
+      expect(module.dependencies).to.be.eql(['cylon-gpio','cylon-i2c']);
     });
   });
 
