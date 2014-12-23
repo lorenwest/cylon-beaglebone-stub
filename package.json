@@ -1,6 +1,6 @@
 {
   "name": "cylon-beaglebone-stub",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/cylon-beaglebone-stub.js",
   "description": "Beaglebone stub for testing",
   "homepage": "https://github.com/lorenwest/cylon-beaglebone-stub",
