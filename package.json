@@ -1,0 +1,33 @@
+{
+  "name": "cylon-beaglebone-stub",
+  "version": "0.1.0",
+  "main": "lib/cylon-beaglebone-stub.js",
+  "description": "Beaglebone stub for testing",
+  "homepage": "https://github.com/lorenwest/cylon-beaglebone-stub",
+  "keywords": ["cylon", "beaglebone", "robot"],
+  "author": "Loren West <open_source@lorenwest.com>",
+
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/lorenwest/cylon-beaglebone-stub.git"
+  },
+
+  "licenses": [
+    "MIT"
+  ],
+
+  "devDependencies": {
+    "sinon-chai": "2.6.0",
+    "chai":       "1.9.2",
+    "mocha":      "1.21.5",
+    "sinon":      "1.10.3"
+  },
+
+  "peerDependencies": {
+    "cylon": ">=0.21.1 < 1"
+  },
+
+  "dependencies": {
+    "cylon": "~0.21.1"
+  }
+}
