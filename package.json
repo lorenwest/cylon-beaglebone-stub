@@ -1,6 +1,6 @@
 {
   "name": "cylon-beaglebone-stub",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "lib/cylon-beaglebone-stub.js",
   "description": "Beaglebone stub for testing",
   "homepage": "https://github.com/lorenwest/cylon-beaglebone-stub",
@@ -24,17 +24,13 @@
   },
 
   "peerDependencies": {
+    "bluebird": ">=2.3.11 <3.0.0",
     "cylon":      ">= 0.21.0 < 1",
     "cylon-gpio": ">= 0.21.0 < 1",
     "cylon-i2c":  ">= 0.18.0 < 1"
   },
 
-  "dependencies": {
-    "cylon": "~0.21.1",
-    "cylon-gpio": ">= 0.21.0 < 1",
-    "cylon-i2c":  ">= 0.18.0 < 1"
-  },
   "scripts": {
-    "test": "make test"
+    "test": "make bdd"
   }
 }
