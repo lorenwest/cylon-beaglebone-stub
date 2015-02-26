@@ -50,15 +50,16 @@ describe("Cylon.Adaptors.BeagleboneStub", function() {
   it("Reads written digital values", function(done) {
     adaptor.digitalRead('P9_18', function(err, value) {
       expect(err).to.equal(null);
-      expect(value).to.equal(1);
+      expect(value === 0 || value === 1).to.equal(true);
       done();
     });
   });
 
   it("Emits written digital values", function(done) {
     adaptor.digitalRead('P9_18');
-    adaptor.once('digitalRead', function(value) {
-      expect(value).to.equal(1);
+    adaptor.once('digitalRead', function(pin, value) {
+      expect(pin).to.equal('P9_18');
+      expect(value === 0 || value === 1).to.equal(true);
       done();
     });
   });
@@ -79,7 +80,7 @@ describe("Cylon.Adaptors.BeagleboneStub", function() {
   it("Reads written analog values", function(done) {
     adaptor.analogRead('P9_40', function(err, value) {
       expect(err).to.equal(null);
-      expect(value).to.equal(.8);
+      expect(value >= 0 && value < 1).to.equal(true);
       done();
     });
   });
@@ -99,16 +100,16 @@ describe("Cylon.Adaptors.BeagleboneStub", function() {
 
   it("Emits written PWM values", function(done) {
     adaptor.pwmWrite('P9_14', .23);
-    adaptor.once('pwmWrite', function(value) {
-      expect(value).to.equal(.23);
+    adaptor.once('pwmWrite', function(pin, value) {
+      expect(value >= 0 && value < 1).to.equal(true);
       done();
     });
   });
 
   it("Writes servo values as PWM values", function(done) {
     adaptor.servoWrite('P9_42', .85, 2000, 2);
-    adaptor.once('servoWrite', function(value) {
-      expect(value).to.equal(.85);
+    adaptor.once('servoWrite', function(pin, value) {
+      expect(value >= 0 && value < 1).to.equal(true);
       done();
     });
   });
